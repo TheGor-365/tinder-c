@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :accounts
+  root to: 'public#home'
   get 'public/home'
-  root 'public#home'
 end
